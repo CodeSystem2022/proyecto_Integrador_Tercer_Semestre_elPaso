@@ -1,0 +1,180 @@
+/*Resets*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+/*Resets*/
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+  margin: 0;
+  padding: 0; }
+
+/* Fuentes
+*/
+/*Tipografia
+*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  /* Se utiliza la unidad de medida 1rem=16px */
+  line-height: 1.6;
+  color: #333; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  margin-bottom: 0.9375rem; }
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: normal; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.875rem;
+  text-align: center;
+  font-weight: normal; }
+
+h5 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: normal; }
+
+p {
+  margin-bottom: 0.9375rem; }
+
+.text-center {
+  text-align: center; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+.text-bold {
+  font-weight: bold; }
+
+/*Estilos del header*/
+/*Logo adaptable*/
+.logo-responsive {
+  width: 100%; }
+
+@media screen and (min-width: 1280px) {
+  .logo-responsive {
+    width: 15%; } }
+
+@media screen and (min-width: 980px) {
+  .logo-responsive {
+    width: 30%; } }
+
+@media screen and (min-width: 768px) {
+  .logo-responsive {
+    width: 40%; } }
+
+@media screen and (min-width: 480px) {
+  .logo-responsive {
+    width: 50%; } }
+
+/*Estilo del encabezado*/
+.headColor {
+  background-color: #c24f1f;
+  font-size: 1.5rem; }
+
+/*Estilos del bodyr*/
+body {
+  background-color: #f3d97c; }
+
+.cajaTitulo {
+  background-color: #419285;
+  color: #fff;
+  font-size: 3rem; }
+
+/*Clases de Botones*/
+/*Boton Guardar*/
+.btn-1 {
+  background-color: #419285;
+  color: white;
+  padding: 0.5rem 0.9375rem;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: background-color 0.3s;
+  justify-content: center; }
+
+.btn-1:hover {
+  background-color: #45a049; }
+
+/* Boton Editar */
+.btn-2 {
+  background-color: #3c3030;
+  color: white;
+  padding: 0.5rem 0.9375rem;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: background-color 0.3s; }
+
+.btn-2:hover {
+  background-color: #565a56; }
+
+/* Boton Eliminar */
+.btn-3 {
+  background-color: #c24f1f;
+  color: white;
+  padding: 0.5rem 0.9375rem;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: background-color 0.3s; }
+
+.btn-3:hover {
+  background-color: #c9886c; }
+
+#link {
+  color: white; }
+
+/*Estilos del Scroll*/
+.scrollable-div {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+  border-radius: 1rem; }
+
+.scrollable-div::-webkit-scrollbar {
+  height: 0.625rem; }
+
+.scrollable-div::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+.scrollable-div::-webkit-scrollbar-thumb {
+  background: #888; }
+
+.scrollable-div::-webkit-scrollbar-thumb:hover {
+  background: #555; }
+
+.scrollable-row {
+  display: flex;
+  flex-wrap: nowrap; }
+
+.list-group-item {
+  flex: 0 0 auto; }
+
+/*Estilos del footer*/
+footer {
+  background-color: #419285;
+  color: #fff;
+  padding: 1.3rem;
+  text-align: center; }
+  footer a {
+    color: black;
+    text-decoration: none; }
+    footer a:hover {
+      color: black;
+      text-decoration: underline; }

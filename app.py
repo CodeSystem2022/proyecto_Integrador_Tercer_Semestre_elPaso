@@ -28,6 +28,9 @@ def homeDos():
     productsReceived = products.find()
     return render_template('index.html', products = productsReceived)
 '''
+# Legajo generado automaticamente
+
+legajo = random.randint(2000, 4500)
 
 #Method Post
 @app.route('/products', methods=['POST'])
@@ -60,6 +63,34 @@ def addProduct():
     else:
         return notFound()
     
+    
+    
+        
+        
+# Envio de email confirmando suscripcion
+
+remitente = "denismembrive4@gmail.com"
+destinatario = "denismembrive@gmail.com"
+mensaje = "¡Se ha registrado correctamente!"
+email = EmailMessage()
+email["From"] = remitente
+email["To"] = destinatario
+email["Subject"] = "Correo de prueba"
+email.set_content(mensaje)
+smtp = smtplib.SMTP_SSL("smtp.gmail.com")
+smtp.login(remitente, "sdxeqmjwoowfkrhz")
+smtp.sendmail(remitente, destinatario, email.as_string())
+smtp.quit()
+
+
+
+
+
+
+
+
+
+
 
 #Method delete
 @app.route('/delete/<string:product_name>')
@@ -101,5 +132,3 @@ def notFound(error=None):
 
 if __name__ == '__main__':
     app.run(debug=True, port=4000)
-
-    

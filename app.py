@@ -78,7 +78,7 @@ email["To"] = destinatario
 email["Subject"] = "Correo de prueba"
 email.set_content(mensaje)
 smtp = smtplib.SMTP_SSL("smtp.gmail.com")
-smtp.login(remitente, "sdxeqmjwoowfkrhz")
+smtp.login(remitente, "znvqcqmcqwkptdfe")
 smtp.sendmail(remitente, destinatario, email.as_string())
 smtp.quit()
 
